@@ -1,0 +1,22 @@
+{
+  "name": "el-dia-que-no-te-perdimos",
+  "version": "1.0.0",
+  "description": "Página web para el estreno del documental 'El día que no te perdimos'",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=/index.html",
+    "start": "npm run dev",
+    "serve": "live-server --port=3000"
+  },
+  "keywords": [
+    "documental",
+    "estreno",
+    "netlify",
+    "rsvp"
+  ],
+  "author": "Pablo Jiménez Beneitez",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

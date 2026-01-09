@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Invitación al estreno del documental 'El día que no te perdimos' - 13 de enero de 2026">
+    <title>El día que no te perdimos - Estreno</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Playfair+Display:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="brand">PabLIX</div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <h1 class="hero-title">El día que no te perdimos</h1>
+            <!-- ECG Animation -->
+            <div class="ecg-container">
+                <svg class="ecg-line" viewBox="0 0 1200 100" preserveAspectRatio="none">
+                    <defs>
+                        <linearGradient id="ecgGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#00BFFF;stop-opacity:0.3" />
+                            <stop offset="50%" style="stop-color:#00BFFF;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#00BFFF;stop-opacity:0.3" />
+                        </linearGradient>
+                    </defs>
+                    <!-- ECG Pattern: Base line with realistic QRS complexes -->
+                    <path class="ecg-path" d="M0,50 
+                        L100,50 
+                        L110,45 L115,30 L120,70 L125,50 L130,50
+                        L200,50 
+                        L210,45 L215,30 L220,70 L225,50 L230,50
+                        L300,50 
+                        L310,45 L315,30 L320,70 L325,50 L330,50
+                        L400,50 
+                        L410,45 L415,30 L420,70 L425,50 L430,50
+                        L500,50 
+                        L510,45 L515,30 L520,70 L525,50 L530,50
+                        L600,50 
+                        L610,45 L615,30 L620,70 L625,50 L630,50
+                        L700,50 
+                        L710,45 L715,30 L720,70 L725,50 L730,50
+                        L800,50 
+                        L810,45 L815,30 L820,70 L825,50 L830,50
+                        L900,50 
+                        L910,45 L915,30 L920,70 L925,50 L930,50
+                        L1000,50 
+                        L1010,45 L1015,30 L1020,70 L1025,50 L1030,50
+                        L1100,50 
+                        L1110,45 L1115,30 L1120,70 L1125,50 L1130,50
+                        L1200,50" 
+                          fill="none" 
+                          stroke="#00BFFF" 
+                          stroke-width="2.5" 
+                          stroke-linecap="round" 
+                          stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <p class="hero-subtitle">TE INVITAMOS AL ESTRENO</p>
+            
+            <!-- Countdown Section -->
+            <div class="countdown-inline">
+                <h2 class="countdown-title">Faltan</h2>
+                <div class="countdown-timer" id="countdown">
+                    <div class="time-unit">
+                        <span class="time-value" id="days">00</span>
+                        <span class="time-label">Días</span>
+                    </div>
+                    <div class="time-separator">:</div>
+                    <div class="time-unit">
+                        <span class="time-value" id="hours">00</span>
+                        <span class="time-label">Horas</span>
+                    </div>
+                    <div class="time-separator">:</div>
+                    <div class="time-unit">
+                        <span class="time-value" id="minutes">00</span>
+                        <span class="time-label">Min</span>
+                    </div>
+                    <div class="time-separator">:</div>
+                    <div class="time-unit">
+                        <span class="time-value" id="seconds">00</span>
+                        <span class="time-label">Seg</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Info Section -->
+    <section class="event-info">
+        <div class="container">
+            <div class="info-card">
+                <div class="info-item">
+                    <span class="info-label">LUGAR</span>
+                    <span class="info-value">CINES PEÑA DEL CUERVO</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">FECHA</span>
+                    <span class="info-value">13 DE ENERO DE 2026, 18:00 HRS</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">PRODUCCIÓN</span>
+                    <span class="info-value">Pablo Jiménez Beneitez</span>
+                </div>
+            </div>
+            <div class="download-section">
+                <button class="download-btn" id="download-btn">
+                    <span class="download-icon">⬇</span>
+                    Descargar Entrada
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">PabLIX</div>
+                <div class="footer-credit">Producción: Pablo Jiménez Beneitez</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
