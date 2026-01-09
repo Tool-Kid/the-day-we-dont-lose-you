@@ -33,8 +33,8 @@ setInterval(updateCountdown, 1000);
 // Download Ticket Function
 function downloadTicket() {
     const link = document.createElement('a');
-    link.href = 'ticket.png';
-    link.download = 'entrada-estreno-el-dia-que-no-te-perdimos.png';
+    link.href = 'ticket.jpg';
+    link.download = 'entrada-estreno-el-dia-que-no-te-perdimos.jpg';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

@@ -28,7 +28,7 @@ Página web elegante y compacta para el estreno del documental "El día que no t
 ├── package.json        # Configuración npm y scripts de desarrollo
 ├── .gitignore          # Archivos ignorados por Git
 ├── README.md           # Este archivo
-└── ticket.png          # Imagen de referencia del ticket
+└── ticket.jpg          # Imagen optimizada del ticket (para preview de enlaces)
 ```
 
 ## Desarrollo Local
@@ -127,6 +127,19 @@ Edita las variables CSS en `styles.css`:
     /* ... más colores ... */
 }
 ```
+
+### Configurar Preview de Enlaces (Open Graph)
+
+Para que la imagen del ticket aparezca cuando compartas el enlace en redes sociales o mensajería:
+
+1. **Despliega tu sitio en Netlify** (ver sección de Despliegue)
+2. **Obtén la URL de tu sitio** (ejemplo: `https://tu-sitio.netlify.app`)
+3. **Edita `index.html`** y reemplaza `https://your-site-url.netlify.app` con tu URL real en los meta tags:
+   - Busca todas las instancias de `https://your-site-url.netlify.app`
+   - Reemplázalas con tu URL completa (incluyendo `https://`)
+4. **Vuelve a desplegar** el sitio
+
+Los meta tags Open Graph y Twitter Card ya están configurados y usarán `ticket.jpg` como imagen de preview.
 
 ## Tecnologías Utilizadas
 
