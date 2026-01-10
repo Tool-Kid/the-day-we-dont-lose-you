@@ -1,5 +1,5 @@
 // Countdown Timer
-const premiereDate = new Date('2026-01-13T18:00:00').getTime();
+const premiereDate = new Date('2026-01-13T20:00:00').getTime();
 
 function updateCountdown() {
     const now = new Date().getTime();
